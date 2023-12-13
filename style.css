@@ -276,11 +276,12 @@ body {
 
 
 .work-1{
-  display: flex;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  
   padding: 1rem;
   border-radius: 1rem;
   font-size: 1rem;
@@ -298,7 +299,10 @@ body {
 }
 
 .work-2{
-  display: flex;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -310,7 +314,10 @@ body {
 }
 
 .work-3{
-  display: flex;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -323,7 +330,11 @@ body {
 }
 
 .work-4{
-  display: flex;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+
   flex-direction: column;
   flex-wrap: wrap;
   border-bottom-left-radius: 90rem;
@@ -402,3 +413,8 @@ body {
 /*
  * ADD YOUR STYLES HERE
  */
+
+ @media screen and (max-width: 800px) {
+  .left, .main, .right {
+   width: 100%; }
+  }
